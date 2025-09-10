@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-   <h1>hello there !</h1> 
+   <button onclick="getdata()">Click me</button>
+    <script>
+        async function getdata() {
+         const data = await fetch("https://fakerapi.it/api/v1/persons?_quantity=1")
+         const fdata = await data.json()
+         console.log(fdata)
+        } 
+    </script>
 </body>
 </html>
