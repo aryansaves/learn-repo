@@ -4,7 +4,7 @@ const jwt  = require("jsonwebtoken")
 const jwtpass = "mysecret"
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb+srv://admin:NLQGcCEhI9r7mk1F@cluster0.svazehb.mongodb.net/")
+mongoose.connect("")
 
 app.use(express.json())
 const user = [
